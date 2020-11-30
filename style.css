@@ -1,0 +1,356 @@
+* {   
+    font-family: 'Red Hat Display', sans-serif;    
+}
+/* Main  */
+
+body {    
+    margin: 0 auto;
+    padding: 0 auto;
+    max-width: 1730px;
+    color: #000;
+    background-color: #ccc;
+}
+.container {
+    width: 100%;
+    max-width: 1730px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Header  */
+
+.nav__container {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;    
+    padding-top: 15px;
+    border-bottom: 1px solid #000;    
+}
+.nav__site__item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-right: 30px;    
+}
+.nac__mode {
+    display: flex;
+    flex-direction: row;
+}
+.nav__mode__item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    border: 0;
+}
+.nav__site__item:hover,
+.nav__mode__item:hover {
+    color: #ffe12a;
+}
+.counter:hover {
+    color: #000;
+}
+.nav__mode__item:after,
+.nav__mode__item::after {
+    content: "";
+    display: inline-flex;
+    width: 2px;
+    height: 20px;
+    margin: 0 10px;
+    background-color: #ffe12a;
+}
+/* .nav__mode__item::after {
+
+} */
+.logotype__container {
+    width: 100%;
+    height: 126px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.phone__number {
+    font-size: 20px;
+    color: #ffe12a;
+    font-weight: bold;
+}
+.phone__number__text {
+    font-size: 14px;
+    color: #000;
+}
+.logo__img {
+    margin-top: 70px;
+    width: 208px;
+    height: 51px;
+}
+.social__content {
+    display: flex;
+}
+.social__content a {
+    vertical-align: middle;
+    margin-left: 20px;
+    font-size: 15px;
+    color:#ffe12a;
+
+    transition: color .3s linear;
+}
+.social__content a i:hover {
+    color: #333;
+}
+   
+/* Navmenu */
+
+.main__nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.main__nav__item {
+    font-size: 15px;
+    line-height: 2.2;
+    margin-right: 30px;
+
+    transition: color .3s linear;
+}
+.main__nav__item:hover {
+    color: #ffe12a;
+}
+.main__nav__item:hover:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 5px;
+    height: 2px;
+    background-color: #ffe12a;
+
+    animation-name: changeWidth;
+    animation-duration: 1s;
+}
+
+@keyframes changeWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.main__nav__item:last-child {
+    border: 0;
+}
+ .search i{
+    color: #ffe12a;
+}
+.search i:hover{
+    color: #333;
+}
+
+/* Main content  */
+
+.main__row {
+    width: 100%;
+    display: flex;
+    margin-bottom: -5px;
+}
+.main__item{
+    position: relative;
+}
+.main__content__text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    padding-bottom: 30px;
+    top: 100px;
+    left: 30px;     
+}
+.main__content__text-first {
+    top: 250px;
+}
+.main__item__title {
+color: #000;
+}
+.main__item__title-first {
+    color: #fff;
+}
+.main__item__link-first {
+    color: #fff;
+}
+.main__item__link {
+    font-size: 15px;
+    text-decoration: underline;
+    padding-top: 30px;
+
+    transition: color .3s linear;
+}
+.main__item__link:hover {
+    text-decoration: underline;
+    color: #ffe12a;
+}
+
+/* Posts  */
+
+.blog__header {
+    display: block;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 30px 0 50px;
+    color: #333;
+}
+.inner__blog {
+    display: flex;
+    justify-content: center;
+}
+.blog__item {
+    padding: 20px;
+}
+.blog__item__content {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    align-items: center;
+}
+.blog__item__title {
+    padding-right: 5px;
+}
+.blog__item__date {
+    padding-right: 5px;
+}
+.blog__item__date::after {
+    content: '\2022';
+    padding-left: 5px;
+}
+.blog__item__view {
+    color: #ffe12a;
+}
+.blog__item__text {
+    padding-top: 15px;
+    font-size: 24px;
+    line-height: 30px;
+
+    transition: color .3s linear;
+}
+.blog__item__text:hover {
+    color: #ffe12a;
+}
+
+/* Subscribe  */
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #a4dee9;
+}
+.subscribe__title {
+    padding-top: 80px;
+    font-size: 30px;
+    font-weight: 500;
+    background: none;
+    color: #fff;
+}
+.subscribe__text {
+    padding-top: 20px;
+    font-size: 18px;
+    background-color: inherit;
+    color: #fff;
+}
+.subscribe__input {
+    margin-top: 30px;
+    padding-left: 20px;
+    display: flex;
+    width: 600px;
+    height: 45px;
+    background-color: inherit;
+    border: 1px solid #fff;
+    list-style: 0;
+    color: #fff;
+    font-size: 15px;
+}
+.subscribe__input:focus {
+    outline: 0;
+}
+.subscribe__input::placeholder {
+    font-size: 15px;
+    color: #fff;
+}
+.subscribe__btn {
+    width: 150px;
+    height: 45px;
+    margin: 25px 0 80px;
+    background-color: inherit;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+
+    transition: color .3s linear;
+}
+.subscribe__btn:hover {
+    background-color: #fff;
+    color: #a4dee9;
+}
+
+/* Footer  */
+
+.logo__inner {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 30px;
+}
+.footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+.footer__menu__item {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    font-size: 15px;
+
+    transition: color .3s linear;
+}
+.footer__menu__item:hover {
+    color: #ffe12a;
+}
+.footer__social {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.footer__social__content a {
+    vertical-align: middle;
+    margin-left: 30px;
+    font-size: 15px;
+    color: #7e7e7e;
+
+    transition: color .3s linear;
+}
+.footer__social__content a:hover {
+    color: #ffe12a;
+}
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #999;
+}
+.copyright__content {
+    padding: 20px;
+    font-size: 14px;   
+}
